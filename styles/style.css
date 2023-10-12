@@ -1,0 +1,243 @@
+html, body{
+    font-family: sans-serif;
+    margin: 0;
+    /*background-color: rgb(30, 30, 30);*/
+}
+
+header{
+    background-color: rgb(39, 39, 39);
+}
+
+#headerBar{
+    background-color: rgb(39, 39, 39);
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    position: sticky;
+    top: 0px;
+}
+
+.headerElement{
+    color: white;
+    float: left;
+    text-align: center;
+    display: block;
+    width: 200px;
+    margin: auto;
+    line-height: 50px;
+    text-decoration: none;
+    background-color: rgb(39, 39, 39);
+}
+
+.headerElement:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+#headerBar ul{
+    background-color: rgb(39, 39, 39);
+    position: relative;
+    right: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#headerBar li{
+    display: inline;
+    height: 50px;
+    width: 200px;
+}
+
+#headerLogo{
+    padding: 10px;
+}
+
+
+#backgroundImage{
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+    background-position: center 0px;
+    animation: appear 3s;
+}
+
+
+#backgroundImage > h1{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 8vw;
+    animation: appear 3s;
+}
+
+
+#body{
+    margin: 0px 20% 0px 20%;
+    font-family: sans-serif;
+    font-size: 120%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#body p{
+    text-justify: inter-word;
+    text-align: justify;
+}
+
+#body p, #body ul, .button{
+    font-family: 'Quicksand', sans-serif;
+    display: inline-block;
+}
+
+#body h1, #body h2{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+#body span{
+    margin-left: auto;
+}
+
+#body img{
+    width: 100%;
+}
+
+#partnerList{
+    list-style-type: inside;
+    padding: 0;
+    margin: 0;
+}
+
+#partnerList img{
+    height: 100px;
+    max-width: 25vw;
+    border-radius: 10px;
+}
+
+#partnerList > li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    display: block;
+    width: 40px !important;
+}
+
+.icon:hover{
+    opacity: 0.5;
+}
+
+.contactTable a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+#contactDirection{
+    margin-top: 20px;
+}
+
+.center{
+    width: auto;
+}
+
+.prestationInfoContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: rgb(50, 50, 50);
+}
+
+.prestationInfo{
+    display: block;
+}
+
+hr{
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(20, 20, 20);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    text-align: center;
+}
+
+#socialNetworks{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+#footerLogo{
+    width: 150px;
+    margin: 5px;
+}
+
+#headerMenuBtn{
+    display: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+@media (min-width: 800px){
+    .desktop{
+        display: block !important;
+    }
+}
+
+
+@media (max-width: 800px) {
+  .prestationInfoContainer {
+    flex-direction: column;
+  }
+  #headerMenuBtn{
+    display: block;
+  }
+
+  .desktop{
+    display: none;
+  }
+
+  #backgroundImage{
+    background-position: right;
+  }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
