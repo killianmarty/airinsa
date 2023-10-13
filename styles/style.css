@@ -8,6 +8,22 @@ header{
     background-color: rgb(39, 39, 39);
 }
 
+table{
+    border-collapse: collapse;
+}
+
+table td, table th{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid grey;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.tableContainer{
+    width: 60vw;
+    overflow-x: auto;
+}
+
 #headerBar{
     background-color: rgb(39, 39, 39);
     color: white;
