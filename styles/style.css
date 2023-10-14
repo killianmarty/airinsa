@@ -1,6 +1,7 @@
 html, body{
     font-family: sans-serif;
     margin: 0;
+    overflow-x: hidden;
     /*background-color: rgb(30, 30, 30);*/
 }
 
@@ -70,6 +71,8 @@ table td, table th{
 
 #headerLogo{
     padding: 10px;
+    object-fit: cover;
+    height: 30px;
 }
 
 
@@ -143,6 +146,7 @@ table td, table th{
     display: inline-block;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .icon{
@@ -224,18 +228,21 @@ footer{
     cursor: pointer;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
     .desktop{
         display: block !important;
     }
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .prestationInfoContainer {
     flex-direction: column;
   }
   #headerMenuBtn{
+    display: block;
+  }
+  #headerBar li{
     display: block;
   }
 
@@ -245,6 +252,10 @@ footer{
 
   #backgroundImage{
     background-position: right;
+  }
+
+  #body{
+    margin: 0px 10% 0px 10%;
   }
 }
 
