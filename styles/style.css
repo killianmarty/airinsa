@@ -30,9 +30,11 @@ table td, table th{
     color: white;
     height: 50px;
     width: 100%;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content:space-between;
+    -webkit-justify-content: space-between;
     position: sticky;
     top: 0px;
 }
@@ -73,6 +75,7 @@ table td, table th{
     padding: 10px;
     object-fit: cover;
     height: 30px;
+    max-width: 35vw;
 }
 
 
