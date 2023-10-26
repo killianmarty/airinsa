@@ -255,6 +255,10 @@ footer{
     display: none;
   }
 
+  .tableContainer{
+    width: 80vw;
+  }
+
   #backgroundImage{
     background-position: right;
   }
