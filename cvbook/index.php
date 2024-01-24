@@ -157,7 +157,7 @@
       justify-content: space-between;
       padding: 10px;
       background-color: rgb(39, 39, 39);
-      height: 50px;
+      min-height: 50px;
       box-sizing: border-box;
       flex-wrap: wrap;
     }
