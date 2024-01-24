@@ -84,6 +84,7 @@
       width: 300px;
       background-color: white;
       border-radius: 0 0 10px 10px;
+      color: black;
     }
 
     #top span {

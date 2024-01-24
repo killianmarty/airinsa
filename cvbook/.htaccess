@@ -1,5 +1,0 @@
-<Directory /home/killian/Documents/dev/php/cvbook>
-	Options Indexes FollowSymLinks
-	AllowOverride None
-	Require all granted
-</Directory>
