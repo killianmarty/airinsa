@@ -147,7 +147,6 @@
       justify-content: space-between;
       padding: 10px;
       background-color: rgb(39, 39, 39);
-      border-bottom: 1px solid black;
     }
 
     header img{
