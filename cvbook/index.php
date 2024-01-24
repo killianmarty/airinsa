@@ -56,8 +56,8 @@
       left: 10px;
       right: 10px;
       bottom: 10px;
-      padding-top: 70px;
-      max-height: 450px;
+      max-height: calc(100% - 70px);
+      height: 450px;
       width: calc(100% - 20px);
       /*width: 300px;*/
     }
