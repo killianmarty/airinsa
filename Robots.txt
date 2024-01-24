@@ -1,2 +1,7 @@
 User-agent: Googlebot
 Disallow:
+
+User-agent: *
+Allow: /
+
+Sitemap: https://airinsa.insat.fr/sitemap.xml
