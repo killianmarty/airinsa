@@ -170,6 +170,7 @@
       height: 30px;
       margin: 0px;
       align-self: center;
+      display: inline-block;
     }
 
     header span{
