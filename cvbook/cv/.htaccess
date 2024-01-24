@@ -1,0 +1,7 @@
+Options -Indexes
+
+<FilesMatch "\.pdf$">
+    Order allow,deny
+    Allow from all
+    Satisfy any
+</FilesMatch>
