@@ -58,6 +58,7 @@
       bottom: 5%;
       max-height: 80%;
       height: 450px;
+      max-width: 90%;
       /*width: 300px;*/
     }
 
