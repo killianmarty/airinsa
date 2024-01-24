@@ -41,8 +41,9 @@
       border-radius: 10px;
       color: rgb(240, 240, 240);
       max-width: 80vw;
-      max-height: 60vh;
+      max-height: 60vh !important;
       height: 600px;
+      position: relative;
     }
 
     span.h5 {
@@ -51,10 +52,13 @@
     }
 
     embed {
-      width: 90%;
-      height: 80%;
-      /*height: 450px;
-      width: 300px;*/
+      position: absolute;
+      left: 5%;
+      right: 5%;
+      bottom: 5%;
+      max-height: 80%;
+      height: 450px;
+      /*width: 300px;*/
     }
 
     #form {
