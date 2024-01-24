@@ -265,7 +265,7 @@
             $passwd = htmlspecialchars($_POST["passwd"]);
             if(array_key_exists($login, $log)) {
               if(password_verify($passwd, $log[$login])) {
-                if($login == "airinsa") {
+                if($login == "admin") {
                   $_SESSION["id"] = 2;
                 } else {
                   $_SESSION["id"] = 1;
