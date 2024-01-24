@@ -48,7 +48,7 @@
 
     span.h5 {
       display: block;
-      height: 30px;
+      height: 20px;
     }
 
     embed {
