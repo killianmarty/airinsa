@@ -49,6 +49,12 @@
     span.h5 {
       display: block;
       height: 20px;
+      color: white;
+    }
+
+    span h5 {
+      color: white;
+      margin: 10px;
     }
 
     embed {
