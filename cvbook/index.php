@@ -148,6 +148,7 @@
       padding: 10px;
       background-color: rgb(39, 39, 39);
       height: 50px;
+      box-sizing: border-box;
     }
 
     header img{
