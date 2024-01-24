@@ -151,11 +151,11 @@
     }
 
     header img{
-      height: 40px;
+      height: 30px;
     }
 
     header h1{
-      height: 40px;
+      height: 30px;
       margin: 0px;
       align-self: center;
     }
