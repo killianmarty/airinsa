@@ -168,7 +168,9 @@
   <body>
     <header>
       <span>
-        <img id="headerLogo" src="assets/logo.png" alt="Air INSA">
+        <a href="../">
+          <img id="headerLogo" src="assets/logo.png" alt="Air INSA">
+        </a>
       </span>
       
       <h1>CV Book des membres du club</h1>
