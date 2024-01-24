@@ -53,12 +53,12 @@
 
     embed {
       position: absolute;
-      left: 5%;
-      right: 5%;
-      bottom: 5%;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
       max-height: 80%;
       height: 450px;
-      max-width: 90%;
+      width: calc(100% - 20px);
       /*width: 300px;*/
     }
 
