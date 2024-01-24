@@ -42,7 +42,7 @@
       color: white;
       max-width: 80vw;
       max-height: 60vh !important;
-      height: 600px;
+      height: 550px;
       position: relative;
     }
 
