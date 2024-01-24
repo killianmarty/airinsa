@@ -171,7 +171,7 @@
       margin: 0px;
       align-self: center;
       display: inline-block;
-      font-size: 1vw;
+      font-size: 10vw;
     }
 
     header span{
