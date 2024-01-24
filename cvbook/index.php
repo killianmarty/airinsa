@@ -40,6 +40,8 @@
       width: 320px;
       border-radius: 10px;
       color: rgb(240, 240, 240);
+      max-width: 80vw;
+      max-height: 60vh;
     }
 
     span.h5 {
