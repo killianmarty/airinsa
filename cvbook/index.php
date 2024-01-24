@@ -171,7 +171,7 @@
       margin: 0px;
       align-self: center;
       display: inline-block;
-      font-size: 3vw;
+      font-size: calc(16px + 2.5vw);
     }
 
     header span{
