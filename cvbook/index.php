@@ -145,8 +145,9 @@
       font-family: 'Raleway', sans-serif;
       color: white;
       justify-content: space-between;
-      padding: 0 10px 0 10px;
+      padding: 10px;
       background-color: rgb(39, 39, 39);
+      height: 50px;
     }
 
     header img{
