@@ -39,7 +39,7 @@
       padding: 5px;
       width: 320px;
       border-radius: 10px;
-      color: rgb(240, 240, 240);
+      color: rgb(250, 250, 250);
       max-width: 80vw;
       max-height: 60vh !important;
       height: 600px;
