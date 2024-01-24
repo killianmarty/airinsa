@@ -169,7 +169,7 @@
       height: 30px;
       margin: 0px;
       align-self: center;
-      font-size: 10%
+      font-size: 100%
     }
 
     header span{
