@@ -159,6 +159,7 @@
       background-color: rgb(39, 39, 39);
       height: 50px;
       box-sizing: border-box;
+      flex-wrap: wrap;
     }
 
     header img{
@@ -169,7 +170,6 @@
       height: 30px;
       margin: 0px;
       align-self: center;
-      min-width: 300px;
     }
 
     header span{
