@@ -66,6 +66,7 @@
       height: 450px;
       width: calc(100% - 20px);
       /*width: 300px;*/
+      background-color: white;
     }
 
     #form {
