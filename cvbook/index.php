@@ -153,9 +153,6 @@
 
     h2{
       margin: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
     }
 
     header{
@@ -268,7 +265,7 @@
         }
 
         foreach ($pdf as $e) {
-          //echo '<a href="cv/'.$e[3].'" target="cv"><div>';
+          echo '<a href="cv/'.$e[3].'" target="cv"><div>';
           echo "<h2>".$e[0]." ".$e[1];
           if($_SESSION["id"] == 2) {echo " <a href='?delete=".$e[3]."'>X</a>";}
           echo "</h2>";
