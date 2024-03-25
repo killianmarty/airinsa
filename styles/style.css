@@ -233,6 +233,42 @@ footer{
     cursor: pointer;
 }
 
+.article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.article:hover{
+    color: rgb(60, 60, 60);
+}
+
+.articleImage{
+    min-width: 150px;
+    min-height: 150px;
+    flex:1;
+    object-fit: cover;
+}
+
+.articleText{
+    flex:3;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.articleText h3{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+}
+
+.articleText p{
+    margin: 10px 0 10px 0;
+}
+
 @media (min-width: 1000px){
     .desktop{
         display: block !important;
