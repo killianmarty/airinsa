@@ -97,8 +97,8 @@
         foreach ($pdf as $e) {
           echo '<a href="cv/'.$e[3].'" target="cv"><div>';
           echo "<h2>".$e[0]." ".$e[1];
-          if($_SESSION["id"] == 2) {echo " <a href='?delete=".$e[3]."'>X</a>";}
           echo "</h2>";
+          if($_SESSION["id"] == 2) {echo " <a href='?delete=".$e[3]."'>X</a>";}
           echo "<span class='h5'><h5>".$e[2]."</h5></span>";
           echo '<embed src="cv/'.$e[3].'#toolbar=0&navpanes=0&scrollbar=0" width="300" height="450" defer type="application/pdf"/>';
           echo "</div></a>";
