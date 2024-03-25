@@ -11,6 +11,14 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <?php
+        session_start();
+
+        if(!isset($_SESSION["id"])) {
+            header("Location: index.php");
+            exit();
+        }
+    ?>
     <header>
       <span>
         <a href="../">
@@ -19,16 +27,17 @@
       </span>
       
       <h1>CV Book des membres du club</h1>
-      <span></span>
+      <span class="disconnectBtnCtn">
+        <?php
+        // Vérifier si l'utilisateur est connecté avant d'afficher le bouton de déconnexion
+        if(isset($_SESSION["id"])) {
+            echo '<a id="disconnectBtn" href="logout.php">Déconnexion</a>';
+        }
+        ?>
+      </span>
     </header>
     <main>
         <?php
-        session_start();
-
-        if(!isset($_SESSION["id"])) {
-            header("Location: index.php");
-            exit();
-        }
 
         if($_SESSION["id"] == 2) {
           if(isset($_GET["delete"])) {
@@ -58,6 +67,7 @@
                       $resultat = move_uploaded_file($_FILES['file']['tmp_name'], $image);
                       if($resultat)
                       {
+                        touch($image);
                         header("Refresh: 0");
                       } else {
                         $error = "Erreur lors du chargement de votre pdf !";
@@ -86,6 +96,14 @@
           <?php
         }
 
+        function getCreationDate($file) {
+            return filemtime($file); // Renvoie la date de création du fichier
+        }
+
+        function compareByModificationDate($a, $b) {
+            return $a[4] - $b[4]; // Compare les dates de création
+        }
+
         $cv = scandir("cv");
         $pdf = [];
         foreach ($cv as $e) {
@@ -93,6 +111,8 @@
                 $pdf[] = array_merge(explode("_", explode(".", $e)[0]), [$e]);
             }
         }
+
+        usort($pdf, "compareByModificationDate");
 
         foreach ($pdf as $e) {
           echo '<a href="cv/'.$e[3].'" target="cv"><div>';

@@ -3,7 +3,7 @@ session_start();
 
 $log = [
     "admin" => '$2y$10$F5WkzHN2ZjwaL2ugMBLOaeJa5kEd7LUJ4fnt5noCFtUIehR5p9rTW',
-    "navblue" => '$2y$10$2W.kvFFBaGaCqxOOIafNherExrjhP.GacTj1mbl3eoLLFDX3FQvoC' //nvbl35A7
+    "navblue" => '$2y$10$2W.kvFFBaGaCqxOOIafNherExrjhP.GacTj1mbl3eoLLFDX3FQvoC'
 ];
 
 if(isset($_SESSION["id"])) {

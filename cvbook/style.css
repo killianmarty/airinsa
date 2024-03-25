@@ -133,6 +133,19 @@
       transition: 0.3s ease;
     }
 
+    .disconnectBtnCtn{
+      display: flex;
+      justify-content: flex-end; /* Pour aligner le conteneur du bouton à l'extrémité droite */
+      align-items: center;
+    }
+
+    #disconnectBtn{
+      background-color: whitesmoke;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
     a {
       text-decoration: none;
       color: white;
